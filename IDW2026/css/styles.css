@@ -1,0 +1,367 @@
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+section.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #1e1e2f;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.Nombre {
+    color: white;
+    font-size: 90px;
+}
+
+.descripcion {
+    color: white;
+    font-size: 18px;
+}
+
+.Navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 45px 20px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+}
+
+#elemento {
+    background: #292943;
+    padding: 8px 15px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(97, 218, 251, 0.3);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#elemento:hover {
+    border-color: #61dafb;
+}
+
+.Subtitulo {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#sobre-mi {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.parrafo {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#sobre-mi strong {
+    color: #61dafb;
+}
+
+#foto {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 4px solid #61dafb;
+}
+
+#informacion {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    color: white;
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.habilidades {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#habilidad {
+    background: #292943;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(97, 218, 251, 0.3);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+#proyectos {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    color: white;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #292943;
+    border: 1px solid rgba(97, 218, 251, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#foto_proyecto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #61dafb;
+}
+
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-body h3 {
+    color: #61dafb;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn-card {
+    display: inline-block;
+    background: transparent;
+    color: #61dafb;
+
+    border: 1px solid #61dafb;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    text-align: center;
+    text-decoration: none;
+
+    margin-top: auto;
+}
+
+#contacto {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    color: white;
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#contacto .Subtitulo {
+    margin-bottom: 15px;
+}
+
+#contacto p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+#contacto p a {
+    color: #61dafb;
+}
+
+#contacto form {
+    max-width: 700px;
+    margin: auto;
+}
+
+#contacto fieldset {
+    background: #292943;
+
+    border: 1px solid rgba(97, 218, 251, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#contacto legend {
+    color: #61dafb;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 10px;
+}
+
+#contacto form p {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+#contacto label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#contacto input{
+    background: #1e1e2f;
+    color: white;
+
+    border: 1px solid rgba(97, 218, 251, 0.3);
+    border-radius: 8px;
+
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+#contacto textarea {
+    background: #1e1e2f;
+    color: white;
+
+    border: 1px solid rgba(97, 218, 251, 0.3);
+    border-radius: 8px;
+
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+#contacto input::placeholder{
+    color: #aaa;
+}
+
+#contacto textarea::placeholder {
+    color: #aaa;
+}
+
+#contacto input:focus{
+    color: #aaa;
+}
+#contacto textarea:focus {
+    border-color: #61dafb;
+}
+
+#contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+@media (max-width: 800px) {
+
+    .Nombre {
+        font-size: 55px;
+    }
+
+    .Navegacion {
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px 20px 0;
+    }
+
+    #sobre-mi {
+        margin: 50px 20px;
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    #foto {
+        width: 250px;
+    }
+
+    #informacion{
+        margin: 50px 20px;
+        padding: 25px;
+    }
+
+    #proyectos{
+        margin: 50px 20px;
+        padding: 25px;
+    }
+
+    #contacto {
+        margin: 50px 20px;
+        padding: 25px;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+    }
+}
+
+button { 
+  background: #4CAF50; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  font-weight: bold; 
+  transition: background 0.2s; 
+}
+button:hover { 
+  background: #45a049; 
+}

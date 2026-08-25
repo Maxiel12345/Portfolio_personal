@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="Nombre">Ruiz Joel Maximiliano</h1>
+        <p class="descripcion"><em>Estudiante de la facultad de ciencias exactas en la carrera de Tecnicatura Universitaria en Programacion</em></p>
+    </header>
+
+    <nav>
+        <ul class="Navegacion">
+            <li id="elemento"><a href="#sobre-mi">Sobre mi</a></li>
+            <li id="elemento"><a href="#informacion">Habilidades</a></li>
+            <li id="elemento"><a href="#proyectos">Proyectos</a></li>
+            <li id="elemento"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="sobre-mi">
+            <div class="texto"> 
+            <h2 class="Subtitulo">Sobre mi</h2>
+            <p class="Parrafo">Hola, mi nombre es Maximiliano Ruiz y soy un estudiante de la UNSa cursando la carrera de Tecnicatura Universitaria en Programacion. <br> Estoy en mi 2do año y este es mi primer portfolio hecho con <strong>HTML, CSS y JavaScript</strong></p>
+            </div>
+           
+            <img id="foto" src="./img/fotooo.jpg" alt="foto" width="300">
+        </section>
+
+
+        <section id="informacion">
+            <h2 class="Subtitulo">Habilidades</h2>
+           <ul class="habilidades">
+            <li id="habilidad">C</li>
+            <li id="habilidad">JavaScript (Node/express)</li>
+            <li id="habilidad">Java</li>
+            <li id="habilidad">MYSQL</li>
+            <li id="habilidad">Python</li>
+           </ul>
+        </section>
+
+
+        <section id="proyectos">
+            <h2 class="Subtitulo">Proyectos</h2>
+            <div class="grid-proyectos">
+
+                <article class="card">
+                    <img id="foto_proyecto"   src="./img/condicionalidad.jpeg" alt="Proyecto 1">
+                    <div class="card-body">
+
+                        <h3>Sistema de Condicionalidad</h3>
+                        <p>
+                            Desarrollo de una aplicacion de escritorio para la gestion de la cursada condicionada para alumnos de Ciencias Exactas
+                        </p>
+                        
+
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <img id="foto_proyecto" src="./img/proyecto2.png" alt="Proyecto 2">
+
+                    <div class="card-body">
+
+                        <h3>CRUD de biblioteca</h3>
+
+                        <p>
+                            Aplicacion web para la carga, eliminacion, actualizacion y muestra de libros
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+        </section>
+
+
+        <section id="contacto">
+            <h2 class="Subtitulo">Contacto</h2>
+            <p>Escribime a <a href="mailto:maxi1204maxu@gmail.com">maxi1204maxu@gmail.com</a> o dejame un mensaje aca abajo</p>
+          <form id="form">
+    <fieldset>
+        <legend>Tus datos</legend>
+
+        <p>
+            <label for="NombreyApellido">Nombre y apellido</label>
+            <input
+                name="nombre"
+                type="text"
+                id="NombreyApellido"
+                placeholder="Juan Pérez"
+                required
+            >
+        </p>
+
+        <p>
+            <label for="email">Correo electrónico</label>
+            <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder="ejemplo@gmail.com"
+                required
+            >
+        </p>
+
+        <p>
+            <label for="mensaje">Mensaje</label>
+            <textarea
+                name="mensaje"
+                id="mensaje"
+                placeholder="Escribí tu mensaje..."
+                required
+            ></textarea>
+        </p>
+    </fieldset>
+
+    <button type="submit" id="btn-submit">Enviar</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="./js/app.js"></script>
+        </section>
+    </main>
+</body>
+
+</html>
